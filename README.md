@@ -1,6 +1,11 @@
 ﻿
-# آموزش اضافه کردن پرداخت درون برنامه ای کافه بازار به برنامه های ionic2/3
+# آموزش اضافه کردن پرداخت درون برنامه ای کافه بازار به برنامه های 
+# cordova ionic2/3
+
+<div dir="rtl" alighn="right">
  پس از دانلود و کلن کردن پروژه کامند های زیر را به ترتیب بزنید
+ </div>
+ 
 ```sh
 $ npm install
 $ ionic cordova plugin add cordova-plugin-inapppurchase
@@ -15,7 +20,11 @@ $ npm install --save @ionic-native/in-app-purchase
 Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");
 serviceIntent.setPackage("com.farsitel.bazaar");
 ```
+
+<div dir="rtl" alighn="right">
 سپس با استفاده از فرمان زیر به کوردووا می فهمانیم که برنامه ما از نوع اندرویدی است
+</div>
+
 ```sh
 $ cordova platforms add android
 ```
@@ -48,7 +57,9 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
 "play_store_key": "YOUR PLAY STORE KEY"
 ```
 
+<div dir="rtl" alighn="right">
 تمام شد .حال از نمونه کد زیر میتوان در هر جای برنامه به عنوان مثال استفاده کرد
+</div>
 
 ```sh
 import { InAppPurchase } from '@ionic-native/in-app-purchase';

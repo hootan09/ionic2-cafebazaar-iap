@@ -54,7 +54,7 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
 </div>
 
 ```sh
-"play_store_key": "YOUR PLAY STORE KEY"
+"play_store_key": "YOUR CafeBazaar KEY"
 ```
 
 <div dir="rtl" alighn="right">

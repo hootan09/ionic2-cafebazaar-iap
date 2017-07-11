@@ -6,8 +6,9 @@ $ npm install
 $ ionic cordova plugin add cordova-plugin-inapppurchase
 $ npm install --save @ionic-native/in-app-purchase
 ```
+<div dir="rtl" alighn="right">
 سپس در پوشه plugins/inapppurchase فایل iaphelper.java را پیدا کرده و در خطوط حدودا 265 و 266 کد های زیر را جایگزین میکنیم
-
+</div>
 ```sh
 Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");
 serviceIntent.setPackage("com.farsitel.bazaar");

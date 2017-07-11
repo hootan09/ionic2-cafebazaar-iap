@@ -6,9 +6,11 @@ $ npm install
 $ ionic cordova plugin add cordova-plugin-inapppurchase
 $ npm install --save @ionic-native/in-app-purchase
 ```
+
 <div dir="rtl" alighn="right">
 سپس در پوشه plugins/inapppurchase فایل iaphelper.java را پیدا کرده و در خطوط حدودا 265 و 266 کد های زیر را جایگزین میکنیم
 </div>
+
 ```sh
 Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");
 serviceIntent.setPackage("com.farsitel.bazaar");
@@ -17,12 +19,19 @@ serviceIntent.setPackage("com.farsitel.bazaar");
 ```sh
 $ cordova platforms add android
 ```
+
+<div dir="rtl" alighn="right">
 اکنون به پوشه platforms رفته و در پوشه اندروید به فایل AndroidManifest.xml خط زیر را اضافه میکنیم
+</div>
 
 ```sh
 <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
 ```
+
+<div dir="rtl" alighn="right">
 اکنون در پوشه src/app به فایل app.module.ts در قسمت provider خط زیر را اضافه میکنیم
+</div>
+
 ```sh
 import { InAppPurchase } from '@ionic-native/in-app-purchase';
 .
@@ -30,7 +39,10 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
 .
 ,InAppPurchase
 ````
+
+<div dir="rtl" alighn="right">
 اکنون به پوشه src رفته و فایل manifest.json را ویرایش کرده و کلید  RSA خود را درون آن قرار میدهیم
+</div>
 
 ```sh
 "play_store_key": "YOUR PLAY STORE KEY"

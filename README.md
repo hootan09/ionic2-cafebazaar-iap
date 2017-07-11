@@ -13,7 +13,7 @@ $ npm install --save @ionic-native/in-app-purchase
 ```
 
 <div dir="rtl" alighn="right">
-سپس در پوشه plugins/inapppurchase فایل iaphelper.java را پیدا کرده و در خطوط حدودا 265 و 266 کد های زیر را جایگزین میکنیم
+سپس در پوشه plugins\cordova-plugin-inapppurchase\src\android فایل IabHelper.java را پیدا کرده و در خطوط حدودا 265 و 266 کد های زیر را جایگزین میکنیم
 </div>
 
 ```sh
@@ -30,7 +30,7 @@ $ cordova platforms add android
 ```
 
 <div dir="rtl" alighn="right">
-اکنون به پوشه platforms رفته و در پوشه اندروید به فایل AndroidManifest.xml خط زیر را اضافه میکنیم
+اکنون به پوشه platforms\android رفته و در پوشه اندروید به فایل AndroidManifest.xml خط زیر را اضافه میکنیم
 </div>
 
 ```sh

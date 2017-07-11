@@ -99,3 +99,8 @@ this.iap
 ```sh
 https://github.com/AlexDisler/cordova-plugin-inapppurchase
 ```
+
+# لینک مفید
+```sh
+http://ionicframework.com/docs/native/in-app-purchase/
+```

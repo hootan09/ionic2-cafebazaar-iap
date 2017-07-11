@@ -1,14 +1,12 @@
 
 # آموزش اضافه کردن پرداخت درون برنامه ای کافه بازار به برنامه های ionic2/3
-### نکته: اگر از کد نمونه پروژه بالا استفاده میکنید فقط کافیست که مرحل زیر را انجام دهید.
-### این پروژه یک نمونه ساده از برنامه blank --v2 ، ionic  می باشد.
  پس از دانلود و کلن کردن پروژه کامند های زیر را به ترتیب بزنید
 ```sh
 $ npm install
 $ ionic cordova plugin add cordova-plugin-inapppurchase
 $ npm install --save @ionic-native/in-app-purchase
 ```
-2-سپس در پوشه plugins/inapppurchase فایل iaphelper.java را پیدا کرده و در خطوط حدودا 265 و 266 کد های زیر را جایگزین میکنیم
+سپس در پوشه plugins/inapppurchase فایل iaphelper.java را پیدا کرده و در خطوط حدودا 265 و 266 کد های زیر را جایگزین میکنیم
 
 ```sh
 Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");

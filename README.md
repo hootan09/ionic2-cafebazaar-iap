@@ -68,6 +68,7 @@ constructor(private iap: InAppPurchase) { }
 
 ...
 
+//getProducts
 this.iap
  .getProducts(['prod1', 'prod2', ...])
  .then((products) => {
@@ -78,7 +79,7 @@ this.iap
    console.log(err);
  });
 
-
+//buy
 this.iap
   .buy('prod1')
   .then((data)=> {
@@ -90,6 +91,38 @@ this.iap
     // }
   })
   .catch((err)=> {
+    console.log(err);
+  });
+  
+  //buy and consume
+  this.iap
+  .buy('prod1')
+  .then(function (data) {
+    // ...then mark it as consumed:
+    return inAppPurchase.consume(data.productType, data.receipt, data.signature);
+  })
+  .then(function () {
+    console.log('product was successfully consumed!');
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+  
+  //restorePurchases
+  this.iap
+  .restorePurchases()
+  .then(function (data) {
+    console.log(data);
+    /*
+      [{
+        transactionId: ...
+        productId: ...
+        state: ...
+        date: ...
+      }]
+    */
+  })
+  .catch(function (err) {
     console.log(err);
   });
 ```

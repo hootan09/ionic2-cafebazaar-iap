@@ -41,7 +41,7 @@ $ cordova platforms add android
 اکنون در پوشه src/app به فایل app.module.ts در قسمت provider خط زیر را اضافه میکنیم
 </div>
 
-```sh
+```js
 import { InAppPurchase } from '@ionic-native/in-app-purchase';
 .
 .
@@ -53,7 +53,7 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
 اکنون به پوشه src رفته و فایل manifest.json را ویرایش کرده و کلید  RSA خود را درون آن قرار میدهیم
 </div>
 
-```sh
+```js
 "play_store_key": "YOUR CafeBazaar KEY"
 ```
 
@@ -61,7 +61,7 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
 تمام شد .حال از نمونه کد زیر میتوان در هر جای برنامه به عنوان مثال استفاده کرد
 </div>
 
-```sh
+```js
 import { InAppPurchase } from '@ionic-native/in-app-purchase';
 
 constructor(private iap: InAppPurchase) { }

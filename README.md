@@ -79,6 +79,8 @@ this.iap
    console.log(err);
  });
 
+
+
 //buy
 this.iap
   .buy('prod1')
@@ -94,6 +96,8 @@ this.iap
     console.log(err);
   });
   
+  
+  
   //buy and consume
   this.iap
   .buy('prod1')
@@ -107,6 +111,8 @@ this.iap
   .catch(function (err) {
     console.log(err);
   });
+  
+  
   
   //restorePurchases
   this.iap

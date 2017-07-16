@@ -107,8 +107,8 @@ this.iap
   
   
   
-  //restorePurchases
-  this.iap
+//restorePurchases
+this.iap
   .restorePurchases()
   .then(function (data) {
     console.log(data);
@@ -126,8 +126,8 @@ this.iap
   });
   
   
-  //consume
-   this.iap
+//consume
+this.iap
   .restorePurchases()
   .then(data => this.iap.consume(data[0].productType, data[0].receipt, data[0].signature))
   .then(() => console.log('product was successfully consumed!'))

@@ -103,7 +103,7 @@ this.iap
   .buy('prod1')
   .then(function (data) {
     // ...then mark it as consumed:
-    return inAppPurchase.consume(data.productType, data.receipt, data.signature);
+    return this.iap.consume(data.productType, data.receipt, data.signature);
   })
   .then(function () {
     console.log('product was successfully consumed!');

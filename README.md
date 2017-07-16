@@ -98,19 +98,12 @@ this.iap
   
   
   
-  //buy and consume
-  this.iap
+//buy and consume
+this.iap
   .buy('prod1')
-  .then(function (data) {
-    // ...then mark it as consumed:
-    return this.iap.consume(data.productType, data.receipt, data.signature);
-  })
-  .then(function () {
-    console.log('product was successfully consumed!');
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
+  .then(data => this.iap.consume(data.productType, data.receipt, data.signature))
+  .then(() => console.log('product was successfully consumed!'))
+  .catch( err=> console.log(err))
   
   
   
@@ -128,6 +121,16 @@ this.iap
       }]
     */
   })
+  .catch(function (err) {
+    console.log(err);
+  });
+  
+  
+  //consume
+   this.iap
+  .restorePurchases()
+  .then(data => this.iap.consume(data[0].productType, data[0].receipt, data[0].signature))
+  .then(() => console.log('product was successfully consumed!'))
   .catch(function (err) {
     console.log(err);
   });
